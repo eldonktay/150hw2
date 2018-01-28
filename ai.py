@@ -1,6 +1,8 @@
 from __future__ import print_function
 import copy, random
 MOVES = {0:'up', 1:'left', 2:'down', 3:'right'}
+#tracks the highest tile
+Htile = 2
 
 class State:
 	"""game state information"""
@@ -10,7 +12,7 @@ class State:
 		
 	def highest_tile(self):
 		"""Return the highest tile here (just a suggestion, you don't have to)"""
-		pass
+		return Htile
 
 class Gametree:
 	"""main class for the AI"""
@@ -55,6 +57,7 @@ class Simulator:
 	def moveTiles(self):
 		pass
 	def mergeTiles(self):
+		#the tile in the direction that gets merged will merge, then the score will double and add to the score
 		pass
 	def checkIfCanGo(self):
 		pass
