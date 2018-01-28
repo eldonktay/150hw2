@@ -6,7 +6,10 @@ class State:
 	"""game state information"""
 	#Hint: probably need the tile matrix, which player's turn, score, previous move
 	def __init__(self, matrix, player, score, pre_move):
-		pass
+		matrix = []
+		score = 0
+		
+		
 	def highest_tile(self):
 		"""Return the highest tile here (just a suggestion, you don't have to)"""
 		pass
@@ -43,7 +46,15 @@ class Simulator:
 	def __init__(self, matrix, score):
 		pass
 	def move(self, direction):
-		pass
+		//to move, need to update the blocks to see if can move, then move in desired direction
+		//and update the score
+		if(1)
+			
+		if(2)
+		
+		if(3)
+		
+		if(4)
 	def moveTiles(self):
 		pass
 	def mergeTiles(self):
