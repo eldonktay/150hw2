@@ -49,3 +49,11 @@ Note that engineering the evaluation function, for instance by giving some heuri
 Note
 ------
 Make sure to start immediately. You can see that significantly more code is required compared to Assignment 1. At the deadline, Github will automatically save the last commit as your submission. 
+
+Random
+----
+1. 836
+2. 1428
+3. 1892
+4. 636
+5. 672
