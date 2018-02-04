@@ -31,7 +31,8 @@ class Game:
 		self.tileMatrix = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 		self.undoMat = []
 	def loop(self, fromLoaded = False):
-		auto = False
+	    #if auto = True
+		auto = True
 		if not fromLoaded:
 			self.placeRandomTile()
 			self.placeRandomTile()
@@ -40,7 +41,7 @@ class Game:
 			if auto:
 				if self.checkIfCanGo():
 					#Hint: Check the use of deepcopy
-					ai = Gametree(copy.deepcopy(self.tileMatrix), 3)
+					ai = Gametree(copy.deepcopy(self.tileMatrix), 2)
 					direction = ai.compute_decision()
 					self.move(direction)
 					#comment out the following line if you want to run AI till the end
@@ -131,7 +132,7 @@ class Game:
 		tm = self.tileMatrix
 		for i in range(0, self.board_size ** 2):
 			if tm[int(i / self.board_size)][i % self.board_size] == 0:
-				return True		
+				return True
 		for i in range(0, self.board_size):
 			for j in range(0, self.board_size - 1):
 				if tm[i][j] == tm[i][j + 1]:
